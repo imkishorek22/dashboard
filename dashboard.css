@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+     outline: none;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.sidebar{
+   position: sticky;
+   top: 0;
+   left: 0;
+   bottom: 0;
+    width: 125px;
+    height: 100vh;
+   padding: 0 1.7rem;
+   color: #fff;
+   overflow: hidden;
+   transition: all 0.5s linear;
+   background: rgba(77, 39, 335, 53);
+
+    
+}
+.sidebar:hover{
+    width: 240px;
+    transition: all 0.5s linear;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position:relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin:8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+} 
+.menu li:hover{
+    background: rgb(189, 221, 253);
+} 
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: -700px;
+    left: 0;
+    width: 100%;
+    
+}
+.content{
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+}
+.wrapper img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius:60%;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 1rem;
+    margin-bottom: 1rem;
+}
+.title{
+    color: rgb(73, 11, 218);
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.search{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(77, 39, 335, 53);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+   
+}
+.search input {
+    background: transparent;
+    padding: 10px;
+}
+.search i{
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+.search:hover{
+    transform: scale(1.1);
+}
+html{
+    background-color: lightblue;
+}
+.horizontal{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
